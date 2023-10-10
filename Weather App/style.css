@@ -27,21 +27,24 @@ body h1, .mapouter{
 }
 
 span{
-color: blueviolet;
+/* color: blueviolet; */
+color: rgb(186, 63, 235);
 font-weight: bold;
 }
 
 #city {
-    height: 30px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 button {
     height: 40px;
-    /* display: flex; */
     color:black;
     background-color: rgb(92, 128, 218);
     border: 2px solid rgb(243, 207, 142);
     border-radius: 13px;
+    text-align: center;
     /* padding: 10px; */
 }
 
@@ -83,3 +86,53 @@ img {
     height: 500px;
     width: 600px;
 }
+
+
+
+
+@media (max-width:1000px) {
+
+    #conatiner{
+        flex-direction: column;
+    }
+
+    button{
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin:5px;
+        padding: 0;
+        width:100%;
+    }
+
+    
+#city {
+    padding: 0;
+    width:100%;
+    text-align: center;
+}
+
+}
+
+@media (max-width:500px){
+    
+    #conatiner{
+        flex-direction: column;
+    }
+
+    button{
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        margin:5px;
+        padding: 0;
+        width:100%;
+    }
+
+    
+#city {
+    padding: 0;
+    width:100%;
+    text-align: center;
+}
+} 
