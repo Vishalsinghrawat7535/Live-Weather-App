@@ -46,7 +46,7 @@ function append(data) {
 
     let city = document.createElement("h1")
     city.innerText = `CITY : ${data.name}`
-    city.style = "color:red;font-size:45px"
+    city.style = "color:aqua;font-size:45px"
 
 
     let min = document.createElement("p")
