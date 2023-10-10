@@ -51,24 +51,24 @@ function append(data) {
 
     let min = document.createElement("p")
     min.innerText = `Min-temp : ${Math.floor(data.main.temp_min - 270)} \xB0C`
-    min.style = "color:blue;font-size:25px"
+    min.style = "color:white;font-size:25px"
 
     let max = document.createElement("p")
     max.innerText = `Max-temp : ${Math.ceil(data.main.temp_max - 270)} \xB0C`
-    max.style = "color:blue;font-size:25px"
+    max.style = "color:white;font-size:25px"
 
     let current = document.createElement("p")
     current.innerHTML = `Current-temp : ${Math.ceil(data.main.temp - 270)} \xB0C`
-    current.style = "color:blue;font-size:25px"
+    current.style = "color:white;font-size:25px"
 
 
     let humidity = document.createElement("p")
     humidity.innerHTML = `Humidity : ${data.main.humidity} %`
-    humidity.style = "color:blue;font-size:25px"
+    humidity.style = "color:white;font-size:25px"
 
     let wind = document.createElement("p")
     wind.innerText = `Wind Speed : ${data.wind.speed} km/h`;
-    wind.style = "color:blue;font-size:25px"
+    wind.style = "color:white;font-size:25px"
 
     conatiner.append(city, min, max, current, humidity, wind)
 
